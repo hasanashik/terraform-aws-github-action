@@ -1,18 +1,4 @@
-terraform {
-  cloud {
-    organization = "zaman-iac"
 
-    workspaces {
-      name = "aws-ec2-automation"
-    }
-  }
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "5.32.0"
-    }
-  }
-}
 
 provider "aws" {
   region = "us-east-1"
