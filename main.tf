@@ -18,14 +18,14 @@ provider "aws" {
   region = "us-east-1"
 }
 
-# resource "aws_s3_bucket" "zaman-bucket" {
-#   bucket = "tf-zaman-bucket"
+resource "aws_s3_bucket" "zaman-bucket" {
+  bucket = "tf-zaman-bucket"
 
-#   tags = {
-#     Name        = "zaman-bucket"
-#     Environment = "Dev"
-#   }
-# }
+  tags = {
+    Name        = "zaman-bucket"
+    Environment = "Dev"
+  }
+}
 resource "aws_vpc" "zaman_vpc" {
   cidr_block = "10.10.0.0/16"
   tags = {
